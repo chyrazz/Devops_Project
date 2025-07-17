@@ -21,7 +21,7 @@ mapipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/master']], 
                     userRemoteConfigs: [[
-                        url: 'https://github.com/chyrazz/Devops_Project', 
+                        url: 'https://github.com/chyrazz/Devops_Project.git', 
                     ]]
                 ]
                 // Verify checkout
