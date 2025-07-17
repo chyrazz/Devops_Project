@@ -1,4 +1,4 @@
-pipeline {
+mapipeline {
     agent any
     
     tools {
@@ -19,9 +19,9 @@ pipeline {
                 echo "Checking out source code from GitHub..."
                 checkout scm: [
                     $class: 'GitSCM',
-                    branches: [[name: '*/main']], 
+                    branches: [[name: '*/master']], 
                     userRemoteConfigs: [[
-                        url: 'https://github.com/mmouhib/pi', 
+                        url: 'https://github.com/chyrazz/Devops_Project', 
                     ]]
                 ]
                 // Verify checkout
